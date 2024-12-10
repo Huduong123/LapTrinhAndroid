@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Header với nút quay lại và tiêu đề -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <!-- Nút quay lại -->
+            <ImageView
+                android:id="@+id/back_button_update"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/baseline_arrow_back_24"
+                android:contentDescription="Back"
+                android:layout_marginEnd="8dp" />
+
+            <!-- Tiêu đề nằm ở giữa -->
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Cập nhật thông tin"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:paddingLeft="50dp" />
+        </LinearLayout>
+
+        <!-- Khoảng cách giữa header và nội dung -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
+
+        <EditText
+            android:id="@+id/user_name_update"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Nhập username"
+            android:background="@drawable/border_background"
+            android:layout_marginBottom="16dp"
+            android:padding="8dp"
+            android:enabled="false"
+            android:alpha="0.5" />
+
+        <EditText
+            android:id="@+id/gmail_update"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Nhập Gmail"
+            android:background="@drawable/border_background"
+            android:layout_marginBottom="16dp"
+            android:padding="8dp" />
+
+
+        <EditText
+            android:id="@+id/name_update"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Nhập họ và tên"
+            android:background="@drawable/border_background"
+            android:layout_marginBottom="16dp"
+            android:padding="8dp" />
+
+
+
+        <EditText
+            android:id="@+id/phone_update"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Nhập số điện thoại"
+            android:background="@drawable/border_background"
+            android:inputType="phone"
+            android:layout_marginBottom="16dp"
+            android:padding="8dp" />
+
+        <!-- TextView Hiển Thị Địa Chỉ -->
+        <EditText
+            android:id="@+id/address_update"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Nhập địa chỉ"
+
+            android:background="@drawable/border_background"
+            android:layout_marginBottom="16dp"
+            android:padding="8dp" />
+
+        <!-- Nút xác nhận -->
+        <Button
+            android:id="@+id/update_info_user_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cập nhật hồ sơ"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+
+</LinearLayout>

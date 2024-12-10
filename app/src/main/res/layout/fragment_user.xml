@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Header với nút quay lại và tiêu đề -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Thông tin người dùng"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:paddingLeft="75dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="0dp" />
+    <!-- Thông tin người dùng với ảnh đại diện và tên người dùng -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingTop="32dp"
+        android:background="@drawable/border_background"
+    android:padding="16dp"
+    android:layout_marginBottom="16dp">
+
+        <!-- Ảnh đại diện -->
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/baseline_supervised_user_circle_24"
+        android:contentDescription="Avatar"
+        android:background="@drawable/avatar_background"
+        android:layout_marginEnd="16dp"
+        android:scaleType="centerCrop" />
+
+        <!-- Tên người dùng -->
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên người dùng"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Các nút chức năng -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="24dp">
+
+        <!-- Nút Hồ sơ của tôi -->
+        <Button
+            android:id="@+id/my_profile_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hồ sơ của tôi"
+            android:backgroundTint="#2F6AD0"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="8dp" />
+
+        <!-- Nút Đơn hàng -->
+        <Button
+            android:id="@+id/orders_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đơn hàng"
+            android:backgroundTint="#2F6AD0"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="8dp" />
+        <Button
+            android:id="@+id/change_pass_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dổi mật khẩu"
+            android:backgroundTint="#2F6AD0"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/logout_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đăng xuất"
+            android:backgroundTint="#2F6AD0"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+
+</LinearLayout>

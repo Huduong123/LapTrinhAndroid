@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/drawable/avatar_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Màu nền của ảnh đại diện -->
+    <solid android:color="@android:color/white" />
+
+    <!-- Viền ngoài màu cam -->
+    <stroke
+        android:width="4dp"
+        android:color="#03577E" /> <!-- Màu cam -->
+
+    <!-- Bo góc cho ảnh đại diện (tùy chọn) -->
+    <corners android:radius="50dp" /> <!-- Tạo hình tròn nếu ảnh là hình vuông -->
+</shape>
